@@ -59,12 +59,13 @@ server.post("/savepoint", (require, response) =>{
 
     function afterInsertData(err){
         if(err) {
-            return console.log(err)
+         
+         return response.render("create-point.html", { saved:false })  
+         
         }
 
-        return response.render("create-point.html", {saved:true})
-        
-    }
+        return response.render("create-point.html", { saved:true })  
+      }
     db.run(query, values, afterInsertData)
    
     

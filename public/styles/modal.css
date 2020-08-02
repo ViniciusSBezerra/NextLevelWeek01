@@ -106,3 +106,19 @@
     color: white;
     margin-top: 42px;
 }
+
+#modal.error .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#modal.error img{
+    width: 64px;
+    height: 64px;
+}
+
+#modal.error h1{
+    color: white;
+    margin-top: 42px;
+}
